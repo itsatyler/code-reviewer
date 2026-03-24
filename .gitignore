@@ -1,0 +1,28 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# PyTest files
+.pytest_cache/
+
+# Virtual environments
+.venv
+
+# Archived Files
+_archive/
+__pycache__
+
+# Logs
+*.log
+logs/
+
+# Mac OS Junk
+.DS_Store
+**/.DS_Store
+
+
+.venv/

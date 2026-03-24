@@ -1,0 +1,23 @@
+[project]
+name = "local-code-reviewer"
+version = "0.1.0"
+description = "A local code reviewer powered by llama-cpp"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.12.0",
+    "huggingface-hub>=1.4.1",
+    "llama-cpp-python>=0.3.16",
+    "pyyaml>=6.0",
+    "rich>=14.3.2",
+    "torch>=2.10.0",
+    "transformers>=5.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.0.2",
+]
+
+[tool.setuptools.packages.find]
+include = ["bot*"]
