@@ -1,0 +1,25 @@
+model:
+  path: "models/mistral-7b-instruct-v0.2.Q4_K_M.gguf"
+  hf_repo: "TheBloke/Mistral-7B-Instruct-v0.2-GGUF"
+  hf_filename: "mistral-7b-instruct-v0.2.Q4_K_M.gguf"
+  n_ctx: 4096
+  n_gpu_layers: 0
+  verbose: false
+  chat_format: null
+
+sampling:
+  temperature: 0.7
+  top_p: 0.9
+  top_k: 40
+  max_tokens: 1024
+  repeat_penalty: 1.1
+  stop: []
+
+prompt:
+  system: |
+    You are a senior code reviewer.
+    Point out bugs, style issues, and improvements
+    Structure your review with:
+    1. A brief overall impression
+    2. Specific issues (bugs, style, logic)
+    3. Suggestions for improvement
